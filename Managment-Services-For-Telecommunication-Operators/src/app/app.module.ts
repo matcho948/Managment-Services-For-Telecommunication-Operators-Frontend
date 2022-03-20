@@ -6,18 +6,26 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { TopbarComponent } from './topbar/topbar.component';
 import { MainmenuComponent } from './mainmenu/mainmenu.component';
+import { AddcustomerComponent } from './addcustomer/addcustomer.component';
+import { FindcustomerComponent } from './findcustomer/findcustomer.component';
+import { OffersComponent } from './offers/offers.component';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopbarComponent,
-    MainmenuComponent
+    MainmenuComponent,
+    AddcustomerComponent,
+    FindcustomerComponent,
+    OffersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatToolbarModule,
-    MatGridListModule
+    MatGridListModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
